@@ -8,38 +8,10 @@
     <link href="fotor.jpg" rel="shortcut icon">
 </head>
 <body>
-  <div id="overlay" class="overlay"></div>
-  <div id="welcomeAlert" class="alert">
-    <span class="closebtn" onclick="closeAlert()">&times;</span>
-    <strong>Selamat datang!</strong> Tampilan untuk mobile sedang di perbaiki, silahkan gunakan desktop view. Terima kasih.
-  </div>
-    <div class="portfolio-header">
-        <div class="year-left">2024</div>
-        <div class="title-container">
-            <p class="subtitle">Thanks for your visit and all your appreciation</p>
-            <div class="title">Portfolio</div>
-            <div class="loader">
-              <div class="circle">
-                <div class="dot"></div>
-                <div class="outline"></div>
-              </div>
-              <div class="circle">
-                <div class="dot"></div>
-                <div class="outline"></div>
-              </div>
-              <div class="circle">
-                <div class="dot"></div>
-                <div class="outline"></div>
-              </div>
-              <div class="circle">
-                <div class="dot"></div>
-                <div class="outline"></div>
-              </div>
-            </div>
-        </div>
-        <div class="year-right">2024</div>
-    </div>
-
+  <div class="bg"></div>
+  <a href="PORT.png">
+      <img src="PORT.png" alt="Portfolio Image" style="width:100%;"> <!-- Menambahkan ini -->
+  </a>
     <div class="container">
         <div class="right-side">
             <p>Hello! I am</p>
@@ -164,29 +136,6 @@
     </section>
     
 </body>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var alertBox = document.getElementById('welcomeAlert');
-  var overlay = document.getElementById('overlay');
-  var body = document.body;
-
-  alertBox.style.opacity = 1;
-  alertBox.style.visibility = 'visible';
-  overlay.style.display = 'block';
-  body.classList.add('body-blur');
-});
-
-function closeAlert() {
-  var alertBox = document.getElementById('welcomeAlert');
-  var overlay = document.getElementById('overlay');
-  var body = document.body;
-
-  alertBox.style.opacity = 0;
-  alertBox.style.visibility = 'hidden';
-  overlay.style.display = 'none';
-  body.classList.remove('body-blur');
-}
-</script>
 </html>
 
 
